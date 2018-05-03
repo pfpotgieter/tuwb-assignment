@@ -6,9 +6,9 @@ OUTFILE=README.md
 
 # Default target
 all: guessinggame.sh
-	echo "# **$(TITLESTR)**\n" > $(OUTFILE)
-	echo "**make** was run on $(DATESTR)." >> $(OUTFILE)
-	echo "The script *$^* contains **$(shell eval "cat $^ | wc -l")** lines of code." >> $(OUTFILE)
+	echo "# $(TITLESTR)\n" > $(OUTFILE)
+	echo "1. **make** was run on $(DATESTR).\n" >> $(OUTFILE)
+	echo "2. The script *$^* contains **$(shell eval "cat $^ | wc -l")** lines of code.\n" >> $(OUTFILE)
 
 # Cleanup 
 clean: 
